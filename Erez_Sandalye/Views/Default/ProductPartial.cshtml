@@ -1,0 +1,51 @@
+﻿@using EntityLayer.Concrete
+@model List<Product>
+
+<div class="product-section section pt-70 pb-55">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-title text-center mb-15">
+                    <h2>En Çok Satan Sandalyeler</h2>
+                </div>
+                <div class="product-tab mb-50">
+                    <ul class="nav" role="tablist">
+                        <li role="presentation">
+                            <button class="active show" type="button" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">
+                                Tümü
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade active show" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    @foreach (var product in Model)
+                    {
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-grid-product mb-40">
+                                <div class="product-image">
+                                    <a href="/Product/Detail/@product.ProductId">
+                                        <img src="@product.ProductImages.FirstOrDefault()?.ImageUrl" class="img-fluid" alt="@product.Title" />
+                                        <img src="@product.ProductImages.Skip(1).FirstOrDefault()?.ImageUrl" class="img-fluid" alt="@product.Title" />
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title">
+                                        <a href="/Product/Detail/@product.ProductId">@product.Title</a>
+                                    </h3>
+                                    <p class="product-price">
+                                        <span class="discounted-price">@product.Price.ToString("C")</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

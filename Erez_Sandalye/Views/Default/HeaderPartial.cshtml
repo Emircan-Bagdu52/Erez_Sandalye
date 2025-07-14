@@ -1,17 +1,136 @@
-﻿<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Erez Sandalye</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico in the root directory -->
-    <link href="~/nelson/assets/images/favicon.ico" type="img/x-icon" rel="shortcut icon">
-    <!-- All css files are included here. -->
-    <link rel="stylesheet" href="~/nelson/assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="~/nelson/assets/css/vendor/iconfont.min.css">
-    <link rel="stylesheet" href="~/nelson/assets/css/vendor/helper.css">
-    <link rel="stylesheet" href="~/nelson/assets/css/plugins/plugins.css">
-    <link rel="stylesheet" href="~/nelson/assets/css/style.css">
-    <!-- Modernizr JS -->
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-</head>
+﻿<!--Header section start-->
+<header class="header header-transparent header-sticky  d-lg-block d-none">
+    <div class="header-deafult-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-lg-2 col-md-4 col-12">
+                    <!--Logo Area Start-->
+                    <div class="logo-area">
+                        <a href="index.html"><img src="~/nelson/assets/images/logo.png" alt=""></a>
+                    </div>
+                    <!--Logo Area End-->
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-4 d-none d-lg-block col-12">
+                    <!--Header Menu Area Start-->
+                    <div class="header-menu-area text-center">
+                        <nav class="main-menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Anasayfa</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">İletişim</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Sandalyeler</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Masalar</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--Header Menu Area End-->
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header section end-->
+<!--Header Mobile section start-->
+<header class="header-mobile d-block d-lg-none">
+    <div class="header-bottom menu-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-mobile-navigation d-block d-lg-none">
+                        <div class="row align-items-center">
+                            <div class="col-6 col-md-6">
+                                <div class="header-logo">
+                                    <a href="index.html">
+                                        <img src="~/nelson/assets/images/logo.png" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <div class="mobile-navigation text-end">
+                                    <div class="header-icon-wrapper">
+                                        <ul class="icon-list justify-content-end">
+                                            <li>
+                                                <div class="header-cart-icon">
+                                                    <a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="mobile-menu-icon" id="mobile-menu-trigger"><i class="fa fa-bars"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Mobile Menu start-->
+            <div class="row">
+                <div class="col-12 d-flex d-lg-none">
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+            <!--Mobile Menu end-->
+
+        </div>
+    </div>
+</header>
+<!--Header Mobile section end-->
+<div class="offcanvas-mobile-menu d-block d-lg-none" id="offcanvas-mobile-menu">
+    <a href="javascript:void(0)" class="offcanvas-menu-close" id="offcanvas-menu-close-trigger">
+        <i class="fa fa-times"></i>
+    </a>
+
+    <div class="offcanvas-wrapper">
+
+        <div class="offcanvas-inner-content">
+            <nav class="offcanvas-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Anasayfa</a>
+                    </li>
+                    <li>
+                        <a href="index.html">İletişim</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Sandalyeler</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Masalar</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="offcanvas-widget-area">
+                <div class="off-canvas-contact-widget">
+                    <div class="header-contact-info">
+                        <ul class="header-contact-info-list">
+                            <li>
+                                <i class="ion-android-phone-portrait"></i> <a href="tel://12452456012">
+                                    0 (531) 236 52 34
+                                </a>
+                            </li>
+                            <li><i class="ion-android-mail"></i> <a href="mailto:info@yourdomain.com">info@erezsandalye.com.tr</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Off Canvas Widget Social Start-->
+                <div class="off-canvas-widget-social">
+                    <a href="#" title="Facebook"><i class="fa fa-instagram"></i></a>
+                </div>
+                <!--Off Canvas Widget Social End-->
+            </div>
+        </div>
+    </div>
+
+</div>

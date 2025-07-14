@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Contact\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
