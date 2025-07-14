@@ -6,7 +6,7 @@ namespace Erez_Sandalye.Controllers
     {
         public IActionResult Contact()
         {
-            return View();
+            return View("Deneme");
         }
     }
 }
